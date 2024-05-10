@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
+/*Inicio del header*/
+  header {
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    height: 5rem;
+    width: 5rem;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 1rem;
+  }
+  
+  .logo img {
+    height: 100%;
+    width: auto;
+  }
+  .logo:hover {
+    transform: scale(1.1);
+}
+  
+  h1 {
+    font-family: 'Just Another Hand', cursive;
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  nav ul li {
+    margin-right: 1rem;
+  }
+  
+  nav ul li:last-child {
+    margin-right: 0;
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    background-color: #ffd500;
+    color: #333;
+    border-radius: 2rem;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  nav ul li a:hover {
+    background-color: #e0b90f;
+  }
+  
+  nav ul li input[type="text"] {
+    border: none;
+    background-color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav ul li input[type="text"]::placeholder {
+    color: #ccc;
+  }
+/*Fin del header*/
+  .road-sign {
+    width: 100%;
+    height: 12rem;
+    background-color: rgb(0, 128, 64);
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+  }
+  
+  .text {
+    margin-left: 28rem;
+  }
+  
+  .image1 {
+    width: 13rem;
+    height: auto;
+  }
+
+  .image-container {
+    display: flex;
+  }
+  
+  .image2{
+    width: 33.33%;
+    height: 19rem;
+  }
+  .image2:hover {
+    transform: scale(1.1);
+}
+ 
+  
+ /*Footer ------->*/
+
+ footer{
+  background-color: rgb(0, 0, 0);
+  padding: 0.05rem;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+.footer-middle {
+  text-align: center;
+}
+.footer-right{
+  text-align: right;
+}
+.About_me{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
+  margin: 0;
+  text-decoration: underline;
+}
+
+
+
+
+
