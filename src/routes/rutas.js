@@ -11,5 +11,5 @@ router
 .get('/Recuperar' , rutasController.getRecuperar)
 .get('/Productos' ,rutasController.getProductos)
 .get('/Descripcion', rutasController.getDescripcion)
-.post('/Registro' , rutasController.postRegister)
+.post('/Register' , rutasController.postRegister)
 module.exports = router;

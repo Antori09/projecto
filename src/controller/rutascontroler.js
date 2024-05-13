@@ -28,7 +28,8 @@ const postRegister = (req, res) => {
     const { name, surname, password } = req.body;
     try {
         // Consulta SQL para insertar el usuario en la base de datos
-        const insertQuery = 'INSERT INTO users (nombre, apellido, contraseña) VALUES (?, ?, ?)';
+        const insertQuery = 'INSERT INTO usuario (nombre, apellido, contraseña) VALUES (?, ?, ?)';
+
         const values = [name,surname,password];
 
         // Ejecutar la consulta INSERT
