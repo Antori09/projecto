@@ -1,78 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!-- Define the document type and language -->
   <head>
+    <!-- Head section of the HTML document -->
     <meta charset="UTF-8">
+    <!-- Specify the character encoding -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Set the viewport for responsive design -->
     <link rel="stylesheet" href="../CSS/home.CSS">
+    <!-- Link to an external stylesheet -->
     <title>VETIX</title>
+    <!-- Set the title of the page -->
   </head>
   <body>
+    <!-- Body section of the HTML document -->
     <script>
+      // Get the search input element
       const searchInput = document.getElementById('search-input');
-    
+      
+      // Add an event listener to the search input for keypress events
       searchInput.addEventListener('keypress', function(event) {
+        // Check if the Enter key was pressed
         if (event.key === 'Enter') {
-          // Assuming you want to search on pressing Enter
+          // Get the search term from the input field
           const searchTerm = searchInput.value.trim();
-          // You can add your search logic here, e.g., make an API call or filter a list
+          
+          // Log the search term to the console
           console.log(`Searching for: ${searchTerm}`);
+          
+          // Get the search input element again (not necessary, but included for clarity)
           const searchInput = document.getElementById('search-input');
-const orders = [
-  { id: 1, name: 'ALMADRABA ROLL' },
-  { id: 2, name: 'SUSHI BOWL' },
-  { id: 3, name: 'SASHIMI PLATE' },
-  // Add more orders to the list
-];
-
-searchInput.addEventListener('keypress', function(event) {
-  if (event.key === 'Enter') {
-    const searchTerm = searchInput.value.trim().toLowerCase();
-    const matchingOrders = orders.filter(order => order.name.toLowerCase().includes(searchTerm));
-
-    if (matchingOrders.length > 0) {
-      console.log(`Matching orders: ${matchingOrders.map(order => order.name).join(', ')}`);
-    } else {
-      console.log(`No matching orders found for: ${searchTerm}`);
-    }
-  }
-});
+          
+          // Define an array of orders
+          const orders = [
+            { id: 1, name: 'ALMADRABA ROLL' },
+            { id: 2, name: 'SUSHI BOWL' },
+            { id: 3, name: 'SASHIMI PLATE' },
+            // Add more orders to the list
+          ];
+          
+          // Add an event listener to the search input for keypress events (again, not necessary)
+          searchInput.addEventListener('keypress', function(event) {
+            // Check if the Enter key was pressed
+            if (event.key === 'Enter') {
+              // Get the search term from the input field and convert to lowercase
+              const searchTerm = searchInput.value.trim().toLowerCase();
+              
+              // Filter the orders array to find matching orders
+              const matchingOrders = orders.filter(order => order.name.toLowerCase().includes(searchTerm));
+              
+              // Log the matching orders to the console
+              if (matchingOrders.length > 0) {
+                console.log(`Matching orders: ${matchingOrders.map(order => order.name).join(', ')}`);
+              } else {
+                console.log(`No matching orders found for: ${searchTerm}`);
+              }
+            }
+          });
         }
       });
     </script>
     <header>
-        <div class="header-container">
-          <div class="logo">
-            <a href="/"><img src="../IMG/logo.png" alt="Vetix logo"></a>
-          </div>
-          <h1>VETIX</h1>
+      <!-- Header section of the page -->
+      <div class="header-container">
+        <!-- Container for the logo and header content -->
+        <div class="logo">
+          <!-- Logo section -->
+          <a href="/"><img src="../IMG/logo.png" alt="Vetix logo"></a>
         </div>
-        <nav>
-          <ul>
-            <li><input type="text" placeholder="Buscar..."></li>
-            <li class="menu"><a href="Productos">Menu</a></li>
-            <li><a href="Inicio_de_sesion">Inicio de sesión</a></li>
-            <li><a href="Registro">Registrarme</a></li>
-            <li><img src="../IMG/Carrito.svg" width="50px" height="50px"></li>
-          </ul>
-        </nav>
-      </header>
-      <div class="road-sign">
-        <img src="../IMG/images-removebg-preview.png" alt="Road sign" class="image1">
-        <div class="text">
-          <p>Semana de ofertas desde el 25 de Noviembre hasta el 1 de Diciembre</p>
-        </div>
-        <img src="../IMG/pngtree-50-off-png-images-png-image_4742993-removebg-preview.png" alt="Road sign" class="image1">
+        <h1>VETIX</h1>
+        <!-- Header title -->
       </div>
-      <div class="image-container">
-        <img src="IMG/imagen1.jpg" alt="Image 1" class="image2">
-        <img src="IMG/imagen2.jpg" alt="Image 2" class="image2">
-        <img src="IMG/imagen3.jpg" alt="Image 3" class="image2">
+      <nav>
+        <!-- Navigation menu -->
+        <ul>
+          <li><input type="text" placeholder="Buscar..."></li>
+          <li class="menu"><a href="Productos">Menu</a></li>
+          <li><a href="Inicio_de_sesion">Inicio de sesión</a></li>
+          <li><a href="Registro">Registrarme</a></li>
+          <li><img src="../IMG/Carrito.svg" width="50px" height="50px"></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="road-sign">
+      <!-- Road sign section -->
+      <img src="../IMG/images-removebg-preview.png" alt="Road sign" class="image1">
+      <div class="text">
+        <!-- Text section -->
+        <p>Semana de ofertas desde el 25 de Noviembre hasta el 1 de Diciembre</p>
       </div>
-      <footer>
-        <h1 class="About_me">Contacto:</h1>
-        <div class="footer-middle">
-          <p>Correo: <a href="mailto:example@email.com">Vetix@email.com</a></p>
-          <p>Número de teléfono: <a href="tel:+1234567890">+34 689 89 56 09</a></p>
+      <img src="../IMG/pngtree-50-off-png-images-png-image_4742993-removebg-preview.png" alt="Road sign" class="image1">
+    </div>
+    <div class="image-container">
+      <!-- Image container section -->
+      <img src="IMG/imagen1.jpg" alt="Image 1" class="image2">
+      <img src="IMG/imagen2.jpg" alt="Image 2" class="image2">
+      <img src="IMG/imagen3.jpg" alt="Image 3" class="image2">
+    </div>
+    <footer>
+      <!-- Footer section -->
+      <h1 class="About_me">Contacto:</h1>
+      <div class="footer-middle">
+        <!-- Middle section of the footer -->
+        <p>Correo: <a href="mailto:example@email.com">Vetix@email.com</a></p>
+        <p>Número de teléfono: <a href="tel:+1234567890">+34 689 89 56 09</a></p>
         </div>
         <div class="footer-right">
           <a><img src="IMG/insta.jpg" href="https://www.instagram.com/" height="20rem" width="20rem">@Vetix_Sevilla //</a>
